@@ -1,0 +1,449 @@
+projects:
+- project_id: loan-approval
+  target: loan_status
+  task: classification
+- project_id: loan-payback
+  target: loan_paid_back
+  task: classification
+- project_id: bank-marketing
+  target: y
+  task: classification
+- project_id: insurance-premium
+  target: Premium Amount
+  task: regression
+- project_id: lending-club
+  target: default
+  task: classification
+files:
+  data/bank-marketing/student_hidden_features.parquet:
+  - name: course_row_id
+    dtype: object
+  - name: id
+    dtype: int64
+  - name: age
+    dtype: int64
+  - name: job
+    dtype: object
+  - name: marital
+    dtype: object
+  - name: education
+    dtype: object
+  - name: default
+    dtype: object
+  - name: balance
+    dtype: int64
+  - name: housing
+    dtype: object
+  - name: loan
+    dtype: object
+  - name: contact
+    dtype: object
+  - name: day
+    dtype: int64
+  - name: month
+    dtype: object
+  - name: duration
+    dtype: int64
+  - name: campaign
+    dtype: int64
+  - name: pdays
+    dtype: int64
+  - name: previous
+    dtype: int64
+  - name: poutcome
+    dtype: object
+  data/bank-marketing/student_train.parquet:
+  - name: course_row_id
+    dtype: object
+  - name: id
+    dtype: int64
+  - name: age
+    dtype: int64
+  - name: job
+    dtype: object
+  - name: marital
+    dtype: object
+  - name: education
+    dtype: object
+  - name: default
+    dtype: object
+  - name: balance
+    dtype: int64
+  - name: housing
+    dtype: object
+  - name: loan
+    dtype: object
+  - name: contact
+    dtype: object
+  - name: day
+    dtype: int64
+  - name: month
+    dtype: object
+  - name: duration
+    dtype: int64
+  - name: campaign
+    dtype: int64
+  - name: pdays
+    dtype: int64
+  - name: previous
+    dtype: int64
+  - name: poutcome
+    dtype: object
+  - name: y
+    dtype: int64
+  data/insurance-premium/student_hidden_features.parquet:
+  - name: course_row_id
+    dtype: object
+  - name: id
+    dtype: int64
+  - name: Age
+    dtype: float64
+  - name: Gender
+    dtype: object
+  - name: Annual Income
+    dtype: float64
+  - name: Marital Status
+    dtype: object
+  - name: Number of Dependents
+    dtype: float64
+  - name: Education Level
+    dtype: object
+  - name: Occupation
+    dtype: object
+  - name: Health Score
+    dtype: float64
+  - name: Location
+    dtype: object
+  - name: Policy Type
+    dtype: object
+  - name: Previous Claims
+    dtype: float64
+  - name: Vehicle Age
+    dtype: float64
+  - name: Credit Score
+    dtype: float64
+  - name: Insurance Duration
+    dtype: float64
+  - name: Policy Start Date
+    dtype: object
+  - name: Customer Feedback
+    dtype: object
+  - name: Smoking Status
+    dtype: object
+  - name: Exercise Frequency
+    dtype: object
+  - name: Property Type
+    dtype: object
+  data/insurance-premium/student_train.parquet:
+  - name: course_row_id
+    dtype: object
+  - name: id
+    dtype: int64
+  - name: Age
+    dtype: float64
+  - name: Gender
+    dtype: object
+  - name: Annual Income
+    dtype: float64
+  - name: Marital Status
+    dtype: object
+  - name: Number of Dependents
+    dtype: float64
+  - name: Education Level
+    dtype: object
+  - name: Occupation
+    dtype: object
+  - name: Health Score
+    dtype: float64
+  - name: Location
+    dtype: object
+  - name: Policy Type
+    dtype: object
+  - name: Previous Claims
+    dtype: float64
+  - name: Vehicle Age
+    dtype: float64
+  - name: Credit Score
+    dtype: float64
+  - name: Insurance Duration
+    dtype: float64
+  - name: Policy Start Date
+    dtype: object
+  - name: Customer Feedback
+    dtype: object
+  - name: Smoking Status
+    dtype: object
+  - name: Exercise Frequency
+    dtype: object
+  - name: Property Type
+    dtype: object
+  - name: Premium Amount
+    dtype: float64
+  data/lending-club/student_hidden_features.parquet:
+  - name: course_row_id
+    dtype: object
+  - name: source_file_id
+    dtype: object
+  - name: id
+    dtype: string
+  - name: loan_amnt
+    dtype: float64
+  - name: term
+    dtype: object
+  - name: int_rate
+    dtype: float64
+  - name: installment
+    dtype: float64
+  - name: grade
+    dtype: object
+  - name: sub_grade
+    dtype: object
+  - name: emp_length
+    dtype: object
+  - name: home_ownership
+    dtype: object
+  - name: annual_inc
+    dtype: float64
+  - name: verification_status
+    dtype: object
+  - name: purpose
+    dtype: object
+  - name: addr_state
+    dtype: object
+  - name: dti
+    dtype: float64
+  - name: delinq_2yrs
+    dtype: float64
+  - name: earliest_cr_line
+    dtype: object
+  - name: fico_range_low
+    dtype: float64
+  - name: fico_range_high
+    dtype: float64
+  - name: inq_last_6mths
+    dtype: float64
+  - name: open_acc
+    dtype: float64
+  - name: pub_rec
+    dtype: float64
+  - name: revol_bal
+    dtype: float64
+  - name: revol_util
+    dtype: float64
+  - name: total_acc
+    dtype: float64
+  - name: application_type
+    dtype: object
+  - name: acc_open_past_24mths
+    dtype: float64
+  - name: avg_cur_bal
+    dtype: float64
+  - name: bc_util
+    dtype: float64
+  - name: mort_acc
+    dtype: float64
+  - name: percent_bc_gt_75
+    dtype: float64
+  - name: pub_rec_bankruptcies
+    dtype: float64
+  - name: tax_liens
+    dtype: float64
+  - name: total_bal_ex_mort
+    dtype: float64
+  - name: total_bc_limit
+    dtype: float64
+  - name: source_row_number
+    dtype: int64
+  - name: issue_date
+    dtype: datetime64[ns]
+  data/lending-club/student_train.parquet:
+  - name: course_row_id
+    dtype: object
+  - name: source_file_id
+    dtype: object
+  - name: id
+    dtype: string
+  - name: loan_amnt
+    dtype: float64
+  - name: term
+    dtype: object
+  - name: int_rate
+    dtype: float64
+  - name: installment
+    dtype: float64
+  - name: grade
+    dtype: object
+  - name: sub_grade
+    dtype: object
+  - name: emp_length
+    dtype: object
+  - name: home_ownership
+    dtype: object
+  - name: annual_inc
+    dtype: float64
+  - name: verification_status
+    dtype: object
+  - name: purpose
+    dtype: object
+  - name: addr_state
+    dtype: object
+  - name: dti
+    dtype: float64
+  - name: delinq_2yrs
+    dtype: float64
+  - name: earliest_cr_line
+    dtype: object
+  - name: fico_range_low
+    dtype: float64
+  - name: fico_range_high
+    dtype: float64
+  - name: inq_last_6mths
+    dtype: float64
+  - name: open_acc
+    dtype: float64
+  - name: pub_rec
+    dtype: float64
+  - name: revol_bal
+    dtype: float64
+  - name: revol_util
+    dtype: float64
+  - name: total_acc
+    dtype: float64
+  - name: application_type
+    dtype: object
+  - name: acc_open_past_24mths
+    dtype: float64
+  - name: avg_cur_bal
+    dtype: float64
+  - name: bc_util
+    dtype: float64
+  - name: mort_acc
+    dtype: float64
+  - name: percent_bc_gt_75
+    dtype: float64
+  - name: pub_rec_bankruptcies
+    dtype: float64
+  - name: tax_liens
+    dtype: float64
+  - name: total_bal_ex_mort
+    dtype: float64
+  - name: total_bc_limit
+    dtype: float64
+  - name: source_row_number
+    dtype: int64
+  - name: default
+    dtype: int8
+  - name: issue_date
+    dtype: datetime64[ns]
+  data/loan-approval/student_hidden_features.parquet:
+  - name: course_row_id
+    dtype: object
+  - name: id
+    dtype: int64
+  - name: person_age
+    dtype: int64
+  - name: person_income
+    dtype: int64
+  - name: person_home_ownership
+    dtype: object
+  - name: person_emp_length
+    dtype: float64
+  - name: loan_intent
+    dtype: object
+  - name: loan_grade
+    dtype: object
+  - name: loan_amnt
+    dtype: int64
+  - name: loan_int_rate
+    dtype: float64
+  - name: loan_percent_income
+    dtype: float64
+  - name: cb_person_default_on_file
+    dtype: object
+  - name: cb_person_cred_hist_length
+    dtype: int64
+  data/loan-approval/student_train.parquet:
+  - name: course_row_id
+    dtype: object
+  - name: id
+    dtype: int64
+  - name: person_age
+    dtype: int64
+  - name: person_income
+    dtype: int64
+  - name: person_home_ownership
+    dtype: object
+  - name: person_emp_length
+    dtype: float64
+  - name: loan_intent
+    dtype: object
+  - name: loan_grade
+    dtype: object
+  - name: loan_amnt
+    dtype: int64
+  - name: loan_int_rate
+    dtype: float64
+  - name: loan_percent_income
+    dtype: float64
+  - name: cb_person_default_on_file
+    dtype: object
+  - name: cb_person_cred_hist_length
+    dtype: int64
+  - name: loan_status
+    dtype: int64
+  data/loan-payback/student_hidden_features.parquet:
+  - name: course_row_id
+    dtype: object
+  - name: id
+    dtype: int64
+  - name: annual_income
+    dtype: float64
+  - name: debt_to_income_ratio
+    dtype: float64
+  - name: credit_score
+    dtype: int64
+  - name: loan_amount
+    dtype: float64
+  - name: interest_rate
+    dtype: float64
+  - name: gender
+    dtype: object
+  - name: marital_status
+    dtype: object
+  - name: education_level
+    dtype: object
+  - name: employment_status
+    dtype: object
+  - name: loan_purpose
+    dtype: object
+  - name: grade_subgrade
+    dtype: object
+  data/loan-payback/student_train.parquet:
+  - name: course_row_id
+    dtype: object
+  - name: id
+    dtype: int64
+  - name: annual_income
+    dtype: float64
+  - name: debt_to_income_ratio
+    dtype: float64
+  - name: credit_score
+    dtype: int64
+  - name: loan_amount
+    dtype: float64
+  - name: interest_rate
+    dtype: float64
+  - name: gender
+    dtype: object
+  - name: marital_status
+    dtype: object
+  - name: education_level
+    dtype: object
+  - name: employment_status
+    dtype: object
+  - name: loan_purpose
+    dtype: object
+  - name: grade_subgrade
+    dtype: object
+  - name: loan_paid_back
+    dtype: float64

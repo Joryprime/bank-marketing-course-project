@@ -1,0 +1,13 @@
+schema: data_assets.lineage.v1
+release: projects/v1-public
+source_description: Fixed student-facing project releases derived from the public sources listed in NOTICE.md.
+transformations:
+- source-faithful course preparation
+- fixed project sample construction
+- fixed student train and hidden-feature split
+- hidden-label separation
+excluded_inputs:
+- Home Credit Stability competition data
+- teacher hidden labels
+- raw source files
+internal_upstream: not published; use the file hashes in manifest.yaml and checksums.sha256 to identify this release.

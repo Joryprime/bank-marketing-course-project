@@ -1,0 +1,88 @@
+schema: data_assets.manifest.v1
+asset: fintech-student-projects
+release: projects/v1-public
+status: released
+published_at: '2026-10-11'
+upstream: pinned course project release; see NOTICE.md
+projects:
+- project_id: loan-approval
+  target: loan_status
+  task: classification
+  source_rows: 58645
+  student_train_rows: 46916
+  hidden_rows: 11729
+  split_rule: fixed 80/20 random split
+- project_id: loan-payback
+  target: loan_paid_back
+  task: classification
+  source_rows: 593994
+  student_train_rows: 475195
+  hidden_rows: 118799
+  split_rule: fixed 80/20 random split
+- project_id: bank-marketing
+  target: y
+  task: classification
+  source_rows: 750000
+  student_train_rows: 600000
+  hidden_rows: 150000
+  split_rule: fixed 80/20 random split
+- project_id: insurance-premium
+  target: Premium Amount
+  task: regression
+  source_rows: 1200000
+  student_train_rows: 960000
+  hidden_rows: 240000
+  split_rule: fixed 80/20 random split
+- project_id: lending-club
+  target: default
+  task: classification
+  source_rows: 400000
+  student_train_rows: 321690
+  hidden_rows: 78310
+  split_rule: ordered issue-date split
+restrictions:
+- Home Credit Stability is excluded because its competition rules prohibit redistribution
+  outside the competition.
+- Teacher hidden labels are excluded.
+- Raw source files are excluded.
+files:
+- name: data/bank-marketing/student_hidden_features.parquet
+  rows: 150000
+  bytes: 1983685
+  sha256: 4169285aa7994d4b79bfb3894cbc0012fe2bc7fbc17a464d12d1b2aa7deacf6f
+- name: data/bank-marketing/student_train.parquet
+  rows: 600000
+  bytes: 6015437
+  sha256: 921e6430ae470959b5795c075736162e320d891bece827d905fe6f3483b9031a
+- name: data/insurance-premium/student_hidden_features.parquet
+  rows: 240000
+  bytes: 6356835
+  sha256: 30172e638b66347ef63985704540ae715cb65dcb7f982026d14329856fef75c8
+- name: data/insurance-premium/student_train.parquet
+  rows: 960000
+  bytes: 23855055
+  sha256: 36623e1b2077de95bf50f993637a95707371e75f7385536da825e3c5d67de049
+- name: data/lending-club/student_hidden_features.parquet
+  rows: 78310
+  bytes: 3446465
+  sha256: 9f889bdc79b41e86912d94492614c8560967a279751646e011517039ff816fce
+- name: data/lending-club/student_train.parquet
+  rows: 321690
+  bytes: 12167296
+  sha256: 60fda8d0175b1e3870c32c210639a03cf8445801fca3ca2e31abee8f61168a67
+- name: data/loan-approval/student_hidden_features.parquet
+  rows: 11729
+  bytes: 175002
+  sha256: 7bc3f1346e77e27a75743e2a80e641ca46007d4d11f8e4f7a6f170c25fc36cde
+- name: data/loan-approval/student_train.parquet
+  rows: 46916
+  bytes: 621324
+  sha256: 23711415e1d8efc4e5b3072829a15e7910c165a40a7124486fa75f3cf78187f4
+- name: data/loan-payback/student_hidden_features.parquet
+  rows: 118799
+  bytes: 2399706
+  sha256: 5df34f759e6cfc96a524df5b77dbd9cbae2a7ad95a6d7c21e230d8b68f348149
+- name: data/loan-payback/student_train.parquet
+  rows: 475195
+  bytes: 7388137
+  sha256: 634ceb273316a63e356e3a8844b831d5e83abcf50c25f54c2f713eafe0d68bb1
