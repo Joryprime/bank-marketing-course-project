@@ -1,0 +1,4 @@
+error_type,count
+FN_missed_subscription,8446
+FP_contact_no_subscription,6222
+correct,105978

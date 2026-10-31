@@ -1,0 +1,43 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-26T07:30:51.309918+00:00",
+  "updated_at": "2026-10-26T07:32:25.760272+00:00",
+  "seed": 20261022,
+  "python": "3.12.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "command": [
+    "main.py",
+    "--phase",
+    "all"
+  ],
+  "dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.6.1",
+    "pyarrow": "20.0.0",
+    "matplotlib": "3.10.3",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "code_hashes": {
+    "main.py": "a4cdcea0886875d7829577b8ecabe1b98015b34ee688d02b041d6d0cbb73119b",
+    "src/modeling.py": "0fdcbab4d8190463d1ea34a47e312238749f7eb940181d79efe9a1ea9b6eb96f",
+    "src/evaluation.py": "3e030f50f2eed0d76481c5abe6d907d0896d7fdf53298b27bf4c532b63e15e33",
+    "src/diagnostics.py": "bd71a1d90d5bd5b9d99baf09fdca4f1cd416f8cd560792d5540664eba5527a0b",
+    "docs/protocol.md": "8b7f166be6ffccfed7171fb95d9c8312129d09f83a4e9e97e613aa72b9aa7074"
+  },
+  "data_hashes": {
+    "train": "921e6430ae470959b5795c075736162e320d891bece827d905fe6f3483b9031a",
+    "hidden_features": "4169285aa7994d4b79bfb3894cbc0012fe2bc7fbc17a464d12d1b2aa7deacf6f"
+  },
+  "warnings": [
+    "Unknown solver options: iprint"
+  ],
+  "selected_model": "hist_gbdt",
+  "hidden_labels_accessed": false,
+  "hidden_rows": 150000,
+  "prediction_rows": 150000,
+  "prediction_sha256": "36221d53ae61148a1a579baf2fe3c6dca8ce3aeedf92524291acaad3199478ee",
+  "hidden_feedback_used": false
+}

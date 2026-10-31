@@ -1,0 +1,37 @@
+{
+  "full_rows": 600000,
+  "features": [
+    "age",
+    "balance",
+    "pdays",
+    "previous",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "housing",
+    "loan",
+    "poutcome"
+  ],
+  "excluded": {
+    "y": "目标，不作输入",
+    "course_row_id": "课程行标识，仅对齐",
+    "id": "来源行标识，非客户标识",
+    "duration": "本次联系后时长",
+    "campaign": "含本次的联系累计数，无事前快照",
+    "contact": "最后联系渠道，无事前计划快照",
+    "day": "最后联系日期，无事前计划快照",
+    "month": "最后联系月份，无事前计划快照"
+  },
+  "full_positive_rate": 0.12065,
+  "full_positives": 72390,
+  "development_rows": 479354,
+  "test_rows": 120646,
+  "feature_profile_groups": 458201,
+  "repeated_allowed_profiles": 141799,
+  "repeated_full_nonid_features": 0,
+  "cross_partition_group_overlap": 0,
+  "customer_identity_verified": false,
+  "missing_values": 0,
+  "development_positive_rate": 0.12120687425159694
+}

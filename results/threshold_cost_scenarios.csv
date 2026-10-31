@@ -1,0 +1,4 @@
+scenario,fn_cost,fp_cost,threshold,development_cost,development_tn,development_fp,development_fn,development_tp,data_scope,assumption
+fn_5_fp_1,5.0,1.0,0.16,186679.0,355929,65324,24271,33830,development_oof_only,"Illustrative unit weights, not observed monetary costs"
+fn_2_fp_3,2.0,3.0,0.6,105935.0,418890,2363,49423,8678,development_oof_only,"Illustrative unit weights, not observed monetary costs"
+fn_1_fp_1,1.0,1.0,0.5,51211.0,415815,5438,45773,12328,development_oof_only,"Illustrative unit weights, not observed monetary costs"

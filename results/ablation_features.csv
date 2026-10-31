@@ -1,0 +1,5 @@
+scenario,ap_mean,ap_std,auc_mean,auc_std,n_features,data_scope,used_for_selection,interpretation
+baseline_11_features,0.4571629021134914,0.0055083198743759165,0.8048765713923587,0.0032323007700830607,11,development_grouped_cv,False,Locked contact-time feature allowlist
+add_duration,0.7340627173138031,0.0043427306734509525,0.950217736632174,0.00033829360957520556,12,development_grouped_cv,False,Timing-violation diagnostic; duration remains excluded
+drop_balance,0.4091822317927608,0.007949786713728235,0.7435656332278768,0.006390186818778922,10,development_grouped_cv,False,Retrained feature-removal sensitivity
+drop_poutcome,0.4281552457740335,0.003345521793818347,0.800812665313523,0.003269643657048309,10,development_grouped_cv,False,Retrained feature-removal sensitivity

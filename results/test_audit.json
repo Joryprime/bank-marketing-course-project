@@ -1,0 +1,15 @@
+{
+  "locked_at": "2026-10-26T07:32:17.659310+00:00",
+  "evaluation_started": "2026-10-26T07:32:17.697581+00:00",
+  "evaluation_completed": "2026-10-26T07:32:21.960850+00:00",
+  "evaluation_passes_in_this_run": 1,
+  "models_reported": [
+    "logistic",
+    "hist_gbdt"
+  ],
+  "selected_before_test": "hist_gbdt",
+  "changed_after_test": false,
+  "label_use": "Fixed metrics and descriptive analysis only; no model/threshold selection",
+  "historical_reproduction_note": "The locked test calculation has been repeated in prior reproducibility audits; no test result changed any model, feature, capacity, threshold, or development-only diagnostic choice.",
+  "prediction_file_sha256": "7aee6874f7f2522f5341803805c5d05f225d4f0afba0a144f2da5f99aa2b064b"
+}

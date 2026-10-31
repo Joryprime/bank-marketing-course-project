@@ -1,0 +1,8 @@
+{
+  "model": "hist_gbdt",
+  "data_scope": "development_oof_only",
+  "brier": 0.0848614263160111,
+  "weighted_mean_absolute_bin_gap": 0.003050037418744195,
+  "maximum_absolute_bin_gap": 0.008424556149259438,
+  "caution": "Coarse decile diagnostic; not proof of production calibration"
+}
